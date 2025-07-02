@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,5 +88,41 @@
             
         </script>
     </body>
+>>>>>>> Stashed changes
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="fetchcontact()">
+
+    <div id="table">contact loading...</div>
+    <button id="refresh">Refresh</button>
+    <button id="add">Add Contact</button>
+
+    <script src="config.js"></script>
+    <script>
+        function fetchcontact(){
+            fetch(rootPath +"controller/get-contact/")
+            .then(function(response){
+                return response.json()
+            
+            })
+            .then (function(data){
+                //displayOutput(data)
+                console.log(data)
+            })
+        
+                
+            
+
+            
+        }
+    </script>
+
+</body>
 >>>>>>> Stashed changes
 </html>
